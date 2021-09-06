@@ -39,14 +39,19 @@ export default {
   margin: 0 auto;
 }
 
+.row {
+  display: flex;
+  align-items: center;
+}
+
 li {
   list-style: none;
 }
 
 a {
   text-decoration: none;
-  padding: 10px;
-  color: #464646;
+  color: #9c9c9c;
   font-size: 0.8rem;
+  text-transform: capitalize;
 }
 </style>

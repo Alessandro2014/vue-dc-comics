@@ -14,6 +14,8 @@ export default {
 
 <style scoped lang="scss">
     section{
+        position: relative;
+        z-index: 2;
         height: 120px;
         background-color: black;
         div {

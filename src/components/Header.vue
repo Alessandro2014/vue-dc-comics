@@ -32,14 +32,12 @@ export default {
 <style scoped lang="scss">
 .row {
     height: 120px;
-    display: flex;
     justify-content: space-between;
-    align-items: center;
+
   }
 
 nav ul {
     display: flex;
-    justify-content: space-between;
     align-items: center;
   }
 
@@ -50,8 +48,8 @@ li {
 a {
     text-transform: uppercase;
     color: #464646;
-    font-size: 0.8rem;
     font-weight: bold;
+    padding: 10px;
 }
 
 a:hover {
