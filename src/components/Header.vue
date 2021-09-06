@@ -26,46 +26,35 @@
 <script>
 export default {
     name: "Header",
-
 }
 </script>
 
-<style lang="scss">
-    
-    .container{
-        max-width: 1300px;
-        margin: 0 auto;
-        .row {
-            height: 110px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-     
-        img {
-            max-width: 70px;
-            height: auto;
-        }
-        }
-    }
+<style scoped lang="scss">
+.row {
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-    nav {
-         ul {
-         display: flex;
-            justify-content: space-between;
-            align-items: center;
-        li {
-         list-style: none;
-         font-weight: bold;
-        a {
-         text-decoration: none;
-         padding: 10px;
-         text-transform: uppercase;
-         color: #464646;
-         &:hover {
-            color: #0282F9;
-            }
-          }
-         }
-        }
-    }
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+li {
+    list-style: none;
+}
+
+a {
+    text-transform: uppercase;
+    color: #464646;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #0282F9;
+}
 </style>

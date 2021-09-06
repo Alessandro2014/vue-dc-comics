@@ -1,16 +1,23 @@
 <template>
   <div id="app">
     <Header/>
+    <SectionContent/>
+    <Footer/>
   </div>
 </template>
 
 <script>
 import Header from './components/Header.vue'
+import SectionContent from './components/SectionContent.vue'
+import Footer from './components/Footer.vue'
+
 
 export default {
   name: 'App',
   components: {
     Header,
+    SectionContent,
+    Footer,
   }
 }
 </script>
@@ -27,4 +34,19 @@ export default {
   box-sizing: border-box;
 }
 
+.container{
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  padding: 10px;
+  color: #464646;
+  font-size: 0.8rem;
+}
 </style>
