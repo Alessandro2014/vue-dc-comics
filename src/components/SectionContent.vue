@@ -22,10 +22,7 @@ export default {
             max-width: 1300px;
             margin: 0 auto;
             line-height: 120px;
-            h3 {
-                color: white;
-
-            }
+            
         }
     }
 </style>

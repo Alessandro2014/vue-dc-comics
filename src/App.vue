@@ -2,22 +2,25 @@
   <div id="app">
     <Header/>
     <SectionContent/>
-    <Footer/>
+    <FooterTop/>
+    <FooterBottom/>
+
   </div>
 </template>
 
 <script>
 import Header from './components/Header.vue'
 import SectionContent from './components/SectionContent.vue'
-import Footer from './components/Footer.vue'
-
+import FooterTop from './components/FooterTop.vue'
+import FooterBottom from './components/FooterBottom.vue'
 
 export default {
   name: 'App',
   components: {
     Header,
     SectionContent,
-    Footer,
+    FooterTop,
+    FooterBottom,
   }
 }
 </script>
@@ -53,5 +56,11 @@ a {
   color: #9c9c9c;
   font-size: 0.8rem;
   text-transform: capitalize;
+}
+
+h3 {
+  color: white;
+  text-transform: uppercase;
+
 }
 </style>

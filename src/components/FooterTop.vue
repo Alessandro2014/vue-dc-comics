@@ -1,6 +1,6 @@
 <template>
 <footer id="footer-top">
-    <section class="container">
+    <div class="container">
         <div class="row">
             <nav class="d-block">
                 <h3>dc comics</h3>
@@ -49,14 +49,14 @@
                 <img src="@/assets/img/dc-logo-bg.png" alt="">
             </figure>
         </div>
-    </section>
+    </div>
 </footer>
   
 </template>
 
 <script>
 export default {
-    name:"Footer"
+    name:"FooterTop"
 }
 </script>
 
@@ -79,8 +79,6 @@ nav {
     margin-top: 50px;
 
 h3 {
-    color: white;
-    text-transform: uppercase;
     margin: 15px 0;
     ul {
     display: flex;
