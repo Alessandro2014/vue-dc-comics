@@ -80,18 +80,21 @@ nav {
 
 h3 {
     margin: 15px 0;
+    }
+    
     ul {
     display: flex;
     flex-direction: column;
 li {
     list-style: none;
+    margin-bottom: 5px;
 a {
     text-decoration: none;
     text-transform: capitalize;
-    color: #464646;
+    color: #9e9d9d;
 
     }
-   }
+   
   } 
  }
 }
@@ -102,7 +105,7 @@ figure {
     img {
     max-width: 90%;
     position: fixed; 
-    top: 150px;
+    bottom: 50px;
     right: 50px;
     }
 }

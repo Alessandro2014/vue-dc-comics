@@ -14,15 +14,12 @@ export default {
 
 <style scoped lang="scss">
     section{
-        position: relative;
-        z-index: 2;
         height: 120px;
         background-color: black;
         div {
             max-width: 1300px;
             margin: 0 auto;
             line-height: 120px;
-            
         }
     }
 </style>

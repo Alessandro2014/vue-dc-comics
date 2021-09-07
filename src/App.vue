@@ -2,15 +2,16 @@
   <div id="app">
     <Header/>
     <SectionContent/>
+    <Main/>
     <FooterTop/>
     <FooterBottom/>
-
   </div>
 </template>
 
 <script>
 import Header from './components/Header.vue'
 import SectionContent from './components/SectionContent.vue'
+import Main from './components/Main.vue'
 import FooterTop from './components/FooterTop.vue'
 import FooterBottom from './components/FooterBottom.vue'
 
@@ -19,6 +20,7 @@ export default {
   components: {
     Header,
     SectionContent,
+    Main,
     FooterTop,
     FooterBottom,
   }

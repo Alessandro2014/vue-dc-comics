@@ -20,7 +20,7 @@
 
 <script>
 export default {
-
+    name:"FooterBottom"
 }
 </script>
 
@@ -43,7 +43,7 @@ export default {
 .link-sign {
     border: 2px;
     padding: 10px;
-    border-color: blue;
+    border-color: #0282F9;
 }
 
 .social {
@@ -51,5 +51,9 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.social h3 {
+    color: #0282F9;
 }
 </style>

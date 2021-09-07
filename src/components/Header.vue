@@ -3,12 +3,11 @@
       <div class="row">
         <figure>
             <img src="@/assets/img/dc-logo.png" alt="logo">
-
         </figure>
         <nav>
             <ul>
                 <li><a href="">characters</a></li>
-                <li><a href="">comics</a></li>
+                <li class="active"><a href="">comics</a></li>
                 <li><a href="">movies</a></li>
                 <li><a href="">tv</a></li>
                 <li><a href="">games</a></li>
@@ -26,6 +25,62 @@
 <script>
 export default {
     name: "Header",
+    data() {
+        return {
+         links: [
+            {
+                text: 'Characters',
+                url: '#',
+                current: false,
+            },
+            {
+                text: 'Comics',
+                url: '#',
+                current: true,
+            },
+            {
+                text: 'Movies',
+                url: '#',
+                current: false,
+            },
+            {
+                text: 'TV',
+                url: '#',
+                current: false,
+            },
+            {
+                text: 'Games',
+                url: '#',
+                current: false,
+            },
+            {
+                text: 'Collectibles',
+                url: '#',
+                current: false,
+            },
+            {
+                text: 'Videos',
+                url: '#',
+                current: false,
+            },
+            {
+                text: 'Fans',
+                url: '#',
+                current: false,
+            },
+            {
+                text: 'News',
+                url: '#',
+                current: false,
+            },
+            {
+                text: 'Shop',
+                url: '#',
+                current: false,
+            },
+        ],
+        }
+    }
 }
 </script>
 
@@ -45,6 +100,11 @@ li {
     list-style: none;
 }
 
+figure img {
+    max-width: 80px;
+    height: auto;
+}
+
 a {
     text-transform: uppercase;
     color: #464646;
@@ -52,7 +112,13 @@ a {
     padding: 10px;
 }
 
-a:hover {
+a:hover
+ {
+    color: #0282F9;
+}
+
+li.active {
+    border-bottom: 3px;
     color: #0282F9;
 }
 </style>
