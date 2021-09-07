@@ -28,8 +28,9 @@ export default {
 </script>
 
 <style lang="scss">
+@import "@/assets/scss/_vars.scss";
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -37,32 +38,29 @@ export default {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
 .container{
   max-width: 1300px;
   margin: 0 auto;
-}
-
-.row {
-  display: flex;
-  align-items: center;
+  .row {
+    display: flex;
+    align-items: center;
+  }
 }
 
 li {
   list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: #9c9c9c;
-  font-size: 0.8rem;
-  text-transform: capitalize;
+  a {
+    text-decoration: none;
+    color: $gray-color;
+    text-transform: capitalize;
+  }
 }
 
 h3 {
   color: white;
   text-transform: uppercase;
-
 }
 </style>

@@ -25,25 +25,22 @@ export default {
 </script>
 
 <style scoped lang="scss">
-    #footer-bottom {
-        position: relative;
-        z-index: 2;
-        height: 120px;
-        background-color: #303030;
-    }
+@import "@/assets/scss/_vars.scss";
 
-.container .row {
-    justify-content: space-between;
+#footer-bottom {
+    position: relative;
+    z-index: 2;
     height: 120px;
-    align-content: center;
-}
-
-
-
-.link-sign {
-    border: 2px;
-    padding: 10px;
-    border-color: #0282F9;
+    background-color: $bg-footer;
+    .container .row {
+        justify-content: space-between;
+        height: 120px;
+        align-content: center;
+        .link-sign {
+            border: 2px solid $blue-color;
+            padding: 10px;
+        }
+    }
 }
 
 .social {
@@ -51,9 +48,8 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.social h3 {
-    color: #0282F9;
+    h3 {
+        color: $blue-color;
+    }
 }
 </style>

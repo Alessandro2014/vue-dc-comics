@@ -4,11 +4,11 @@
         <figure>
             <img src="@/assets/img/dc-logo.png" alt="logo">
         </figure>
-        <nav>
-            <ul v-for="(link, index) in links" :key="index">
-                <li :class="{active: link.current}"><a :href="link.url">{{ link.text }}</a></li>
-            </ul>
-        </nav>
+        <ul v-for="(link, index) in links" :key="index">
+            <li :class="{active: link.current}">
+                <a :href="link.url">{{ link.text }}</a>
+            </li>
+        </ul>
     </div>
   </header>
 </template>
@@ -76,40 +76,36 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "@/assets/scss/_vars.scss";
+
 .row {
     height: 120px;
-    justify-content: space-between;
-
+    figure {
+        flex-grow: 1;
+        img {
+            max-width: 80px;
+            height: auto;
+        }
+    } 
   }
 
-nav ul {
+ul {
+    li {
     display: flex;
-    align-items: center;
-  }
-
-li {
-    list-style: none;
+    &.active {
+        border-bottom: 2px solid $blue-color;
+    }   
+}
 }
 
-figure img {
-    max-width: 80px;
-    height: auto;
-}
 
 a {
     text-transform: uppercase;
-    color: #464646;
+    color: $gray-color;
     font-weight: bold;
     padding: 10px;
-}
-
-a:hover
- {
-    color: #0282F9;
-}
-
-li.active {
-    border-bottom: 3px;
-    background-color: #0282F9;
+    &:hover {
+        color: $blue-color;
+    }
 }
 </style>

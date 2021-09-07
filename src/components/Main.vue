@@ -50,9 +50,10 @@ methods: {
 </script>
 
 <style scoped lang="scss">
+@import "@/assets/scss/_vars.scss";
 main {
     height: 170px;
-    background-color: #0282F9;
+    background-color: $blue-color;
     position: relative;
     z-index: 1;
     .container {
@@ -62,7 +63,6 @@ main {
         }
     }
 }
-
 
 figure {
     display: flex;
@@ -75,10 +75,6 @@ figure {
     figcaption {
     margin-left: 10px;
     color: white;
-    font-size: 0.8rem;
     }
 }
-
-
-
 </style>

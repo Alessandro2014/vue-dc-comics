@@ -2,7 +2,7 @@
 <footer id="footer-top">
     <div class="container">
         <div class="row">
-            <nav class="d-block">
+            <nav>
                 <h3>dc comics</h3>
                 <ul>
                     <li><a href="">characters</a></li> 
@@ -61,6 +61,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "@/assets/scss/_vars.scss";
 #footer-top {
     height: 400px;
     width: 100%;
@@ -68,48 +69,37 @@ export default {
     .container{
         max-width: 1300px;
         margin: 0 auto;
-    .row {
-        align-items: flex-start;
-        }
     }
 }
 
 nav {
-    margin-left: 25px;
-    margin-top: 50px;
-
+    margin: 20px 25px 0 0;
+    height: 400px;
 h3 {
     margin: 15px 0;
     }
-    
     ul {
     display: flex;
     flex-direction: column;
-li {
-    list-style: none;
-    margin-bottom: 5px;
-a {
-    text-decoration: none;
-    text-transform: capitalize;
-    color: #9e9d9d;
-
+    li {
+        list-style: none;
+        margin-bottom: 5px;
+        a {
+        text-decoration: none;
+        text-transform: capitalize;
+        color: $gray-color;
     }
-   
   } 
  }
 }
 
 figure {
     position: relative;
-
     img {
-    max-width: 90%;
-    position: fixed; 
-    bottom: 50px;
-    right: 50px;
-    }
+        max-width: 90%;
+        position: fixed; 
+        bottom: 50px;
+        right: 50px;
+        }
 }
-
- 
-
 </style>
