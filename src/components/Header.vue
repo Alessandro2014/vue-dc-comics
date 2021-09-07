@@ -5,17 +5,8 @@
             <img src="@/assets/img/dc-logo.png" alt="logo">
         </figure>
         <nav>
-            <ul>
-                <li><a href="">characters</a></li>
-                <li class="active"><a href="">comics</a></li>
-                <li><a href="">movies</a></li>
-                <li><a href="">tv</a></li>
-                <li><a href="">games</a></li>
-                <li><a href="">collectibles</a></li>
-                <li><a href="">videos</a></li>
-                <li><a href="">fans</a></li>
-                <li><a href="">news</a></li>
-                <li><a href="">shop</a></li>
+            <ul v-for="(link, index) in links" :key="index">
+                <li :class="{active: link.current}"><a :href="link.url">{{ link.text }}</a></li>
             </ul>
         </nav>
     </div>
@@ -119,6 +110,6 @@ a:hover
 
 li.active {
     border-bottom: 3px;
-    color: #0282F9;
+    background-color: #0282F9;
 }
 </style>

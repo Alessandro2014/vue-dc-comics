@@ -2,25 +2,9 @@
   <main>
       <div class="container">
           <div class="row">
-              <figure>
-                  <img src="@/assets/img/buy-comics-digital-comics.png" alt="digital">
-                  <figcaption>DIGITAL COMICS</figcaption>
-              </figure>
-              <figure>
-                  <img src="@/assets/img/buy-comics-merchandise.png" alt="merchandise">
-                  <figcaption>DC MERCHANDISE</figcaption>
-              </figure>
-              <figure>
-                  <img src="@/assets/img/buy-comics-subscriptions.png" alt="subscription">
-                  <figcaption>SUBSCRIPTION</figcaption>
-              </figure>
-              <figure>
-                  <img src="@/assets/img/buy-comics-shop-locator.png" alt="shop">
-                  <figcaption>COMIC SHOP LOCATOR</figcaption>
-              </figure>
-              <figure>
-                  <img src="@/assets/img/buy-dc-power-visa.svg" alt="visa">
-                  <figcaption>DC POWER VISA</figcaption>
+              <figure v-for="(icon, index) in icons" :key="index">
+                  <img :src="GetImageUrl(icon.image)" :alt="icon.text">
+                  <figcaption>{{ icon.text }}</figcaption>
               </figure>
           </div>
       </div>
@@ -29,8 +13,40 @@
 
 <script>
 export default {
-name:"Main"
+name:"Main",
+data() {
+        return {
+         icons: [
+            {
+                image: "buy-comics-digital-comics.png",
+                text: "DIGITAL COMICS",
+            },
+            {
+                image: "buy-comics-merchandise.png",
+                text: "DC MERCHANDISE",
+            },
+            {
+                image: "buy-comics-subscriptions.png",
+                text: "SUBSCRIPTION",
+            },
+            {
+                image: "buy-comics-shop-locator.png",
+                text: "COMIC SHOP LOCATOR",
+            },
+            {
+                image: "buy-dc-power-visa.svg",
+                text: "DC POWER VISA",
+            },
+        ],
+    }
+},
+computed: {},
+methods: {
+    GetImageUrl(fileName) {
+        return require("@/assets/img/" + fileName);
+    }
 }
+};
 </script>
 
 <style scoped lang="scss">
