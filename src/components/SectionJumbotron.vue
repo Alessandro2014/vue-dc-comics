@@ -1,4 +1,5 @@
 <template>
+<!-- JUMBOTRON SOTTO HEADER CON PLACEHOLDER -->
     <div class="jumbotron">
         <h3 class="placeholder">current series</h3>
     </div>
@@ -18,11 +19,10 @@ name:'SectionJumbotron',
     height: 400px;
 }
 
-
 .placeholder {
     padding: 10px;
     position: absolute;
-    left: 15%;
+    left: 10%;
     top: 500px;
     padding: 10px;
     background-color: $blue-color;

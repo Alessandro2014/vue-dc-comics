@@ -5,6 +5,7 @@
         <figure>
             <img src="@/assets/img/dc-logo.png" alt="logo">
         </figure>
+        <!-- STAMPA DINAMICA LINK DI NAVIGAZIONE -->
         <ul v-for="(link, index) in links" :key="index">
             <li :class="{active: link.current}">
                 <a :href="link.url">{{ link.text }}</a>
@@ -19,6 +20,7 @@ export default {
     name: "Header",
     data() {
         return {
+            // IMPORTO DATI LINK HEADER
          links: [
             {
                 text: 'Characters',

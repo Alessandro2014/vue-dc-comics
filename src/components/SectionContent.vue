@@ -1,6 +1,7 @@
 <template>
   <section class="series">
-        <section class="current-series container">
+      <!-- CONTENITORE CARDS -->
+        <section class="current-series container"> 
             <SectionSeries
             v-for="(comic, index) in dcComics" :key="index" :comic="comic"/>
         </section> 
@@ -16,6 +17,7 @@ export default {
     name:"SectionContent",
     data() {
         return {
+            // IMPORTO ARRAY DI OGGETTI FUMETTI CORRENTI
             dcComics,
         }
     },
@@ -39,7 +41,7 @@ export default {
             padding-bottom: 10px;
         }   .button {
                 margin: 30px 0;
-                font-size: 1rem;
+                font-size: 0.9rem;
                 padding: 10px;
                 background-color: $blue-color;
                 display: inline-block;

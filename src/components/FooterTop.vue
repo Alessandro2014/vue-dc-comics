@@ -2,6 +2,7 @@
 <footer id="footer-top">
     <div class="container">
         <div class="row">
+            <!-- LINK DI NAVIGAZIONE FOOTER -->
             <nav>
                 <h3>dc comics</h3>
                 <ul>

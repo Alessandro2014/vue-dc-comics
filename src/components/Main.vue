@@ -2,6 +2,7 @@
   <main>
       <div class="container">
           <div class="row">
+              <!-- STAMPA DINAMICA ICONE -->
               <figure v-for="(icon, index) in icons" :key="index">
                   <img :src="GetImageUrl(icon.image)" :alt="icon.text">
                   <figcaption>{{ icon.text }}</figcaption>

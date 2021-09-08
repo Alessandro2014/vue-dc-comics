@@ -1,4 +1,5 @@
 <template>
+<!-- STAMPA DINAMICA CARD SEZIONE CURRENT SERIES -->
     <div>
         <div class="cards">
             <img :src="comic.thumb" :alt="comic.series">

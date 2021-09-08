@@ -33,6 +33,7 @@ export default {
 
 <style lang="scss">
 @import "@/assets/scss/_vars.scss";
+// UTILS
 #app {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -44,7 +45,7 @@ export default {
   box-sizing: border-box;
 
 }
-
+// ISTRUZIONI GENERICHE
 .container{
   max-width: 1300px;
   margin: 0 auto;
