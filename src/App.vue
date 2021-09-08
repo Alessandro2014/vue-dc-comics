@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <Header/>
+    <SectionJumbotron/>
     <SectionContent/>
     <Main/>
     <FooterTop/>
@@ -9,11 +10,13 @@
 </template>
 
 <script>
-import Header from './components/Header.vue'
-import SectionContent from './components/SectionContent.vue'
-import Main from './components/Main.vue'
-import FooterTop from './components/FooterTop.vue'
-import FooterBottom from './components/FooterBottom.vue'
+import Header from '@/components/Header.vue'
+import SectionContent from '@/components/SectionContent.vue'
+import Main from '@/components/Main.vue'
+import FooterTop from '@/components/FooterTop.vue'
+import FooterBottom from '@/components/FooterBottom.vue'
+import SectionJumbotron from '@/components/SectionJumbotron.vue'
+
 
 export default {
   name: 'App',
@@ -23,6 +26,7 @@ export default {
     Main,
     FooterTop,
     FooterBottom,
+    SectionJumbotron,
   }
 }
 </script>
