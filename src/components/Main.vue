@@ -50,7 +50,7 @@ methods: {
 </script>
 
 <style scoped lang="scss">
-@import "@/assets/scss/_vars.scss";
+@import "../assets/scss/_vars.scss";
 main {
     height: 170px;
     background-color: $blue-color;

@@ -1,4 +1,5 @@
 <template>
+    <!-- HEADER CON LINK DI NAVIGAZIONE -->
   <header class="container">
       <div class="row">
         <figure>
@@ -76,7 +77,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "@/assets/scss/_vars.scss";
+@import "../assets/scss/_vars.scss";
 
 .row {
     height: 120px;
@@ -97,7 +98,6 @@ ul {
     }   
 }
 }
-
 
 a {
     text-transform: uppercase;

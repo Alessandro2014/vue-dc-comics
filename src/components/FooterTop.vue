@@ -46,7 +46,7 @@
                 </ul>
             </nav>
             <figure>
-                <img src="@/assets/img/dc-logo-bg.png" alt="">
+                <img src="../assets/img/dc-logo-bg.png" alt="">
             </figure>
         </div>
     </div>
@@ -61,11 +61,12 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "@/assets/scss/_vars.scss";
+@import "../assets/scss/_vars.scss";
 #footer-top {
     height: 400px;
     width: 100%;
     background-image: url("../assets/img/footer-bg.jpg");
+    position: relative;
     .container{
         max-width: 1300px;
         margin: 0 auto;
@@ -94,12 +95,12 @@ h3 {
 }
 
 figure {
-    position: relative;
+    position: absolute; 
+        top: -50px;
+        right: 50px;
+        z-index: 1;
     img {
         max-width: 90%;
-        position: fixed; 
-        bottom: 50px;
-        right: 50px;
-        }
+    }
 }
 </style>
